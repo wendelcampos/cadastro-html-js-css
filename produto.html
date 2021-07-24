@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estoque - Cadastro de novos produtos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+
+    <header>
+        <h1>CADASTRO DE PRODUTOS</h1>
+    </header>
+    
+    <div class="carrinho">
+        <img src="img/carrinhoCompras.png">
+        <p>Itens no estoque: <span id="totalEstoque">0</span></p>
+    </div>
+    
+    <form>
+        <table>
+            <caption>Cadastro de novos produtos</caption>
+            
+            <tr>
+                <td class="alinharRotulos">Nome do produto:</td>
+                <td><input id="txtNomeProduto" type="text"></td>
+            </tr>
+           
+            <tr>
+                <td class="alinharRotulos">Código do produto:</td>
+                <td><input id="txtCodProduto" type="text"></td>
+            </tr>
+            
+            <tr>
+                <td class="alinharRotulos">Quantidade do produto:</td>
+                <td>
+                    <select id="qtidadeProduto" style="color: black;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarProduto('txtNomeProduto','txtCodProduto','qtidadeProduto')">
+                    <input type="button" value="Ver estoque" class="alinhaBtns" onclick="window.open('verEstoque.html','_self')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

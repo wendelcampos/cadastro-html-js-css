@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de novos clientes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body onload="carregarTotalEstoque('totalEstoque')">
+
+    <header class="titulo">
+        <h1>CADASTRO DE CLIENTES</h1>
+    </header>
+    
+    <form>
+        <table>
+            <caption>Cadastro de Clientes</caption>
+            
+            <tr>
+                <td class="alinharRotulos">Nome:</td>
+                <td><input id="txtNome" type="text"></td>
+            </tr>
+           
+            <tr>
+                <td class="alinharRotulos">Endereço:</td>
+                <td><input id="txtEndereco" type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="alinharRotulos">Telefone:</td>
+                <td><input id="txtTelefone" type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="alinharRotulos">Cidade:</td>
+                <td><input id="txtCidade" type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="alinharRotulos">Email:</td>
+                <td><input id="txtEmail" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarCliente('txtNome','txtEndereco','txtTelefone','txtCidade','txtEmail')">
+                    <input type="reset" value="Limpar" class="alinhaBtns">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
